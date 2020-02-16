@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      background-color: orange;
+    }
+    .container>div {
+      /* flex-grow: 1; */
+      /* 当flex-grow之和小于1时，只能按比例分配剩余空间，而不是全部; 0.3 * 3 = 0.9，此时只会按比例分配.container的90%  */
+      flex-grow: 0.3;
+      width: 20px;
+      height: 20px;
+      border: 1px solid orange;
+      background-color: #409EFF;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    flex-grow 属性定义弹性盒子项（flex item）的拉伸因子。
+   -->
+   <div class="container">
+     <div>1</div>
+     <div>2</div>
+     <div>3</div>
+   </div>
+</body>
+</html>

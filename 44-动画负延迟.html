@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    div {
+      height: 10px;
+      border: 1px solid;
+      border-radius: 10px;
+      background-image: linear-gradient(#409EFF, #409EFF);
+      background-repeat: no-repeat;
+      background-size: 0;
+      animation: move 5s linear infinite;
+      animation-delay: -1s;
+      animation-play-state: paused;
+    }
+    @keyframes move {
+      100% {
+        background-size: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--  
+    CSS动画可以设置延迟时间为负数，表示动画仿佛开始前就已经运行过了那么长时间
+
+    animation-delay: 定义一个负值会让动画立即开始。但是动画会从它的动画序列中某位置开始。例如，如果设定值为-1s，动画会从它的动画序列的第1秒位置处立即开始。
+  -->
+  <div></div>
+</body>
+</html>

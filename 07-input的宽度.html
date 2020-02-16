@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input {
+      /* 直接设置width: 100%; 可以使input的宽度填充父元素宽度 */
+      /* width: 100%; */
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    并不是给元素设置display:block就会自动填充父元素宽度。input 就是个例外，其默认宽度取决于size特性的值，size的值默认是20
+   -->
+   <input type="text">
+   <!-- <input type="text" size="30"> -->
+</body>
+</html>

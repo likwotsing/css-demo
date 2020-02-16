@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    :root {
+      --bar: 'hello';
+      --foo: var(--bar)' world';
+    }
+    #dv {
+      --c: #409EFF;
+      --p: 20%;
+      height: 20px;
+      background-color: #ccc;
+      border-radius: 30px;
+      background-image: linear-gradient(90deg, var(--c), var(--c) 100%);
+      background-size: var(--p);
+      background-repeat: no-repeat;
+    }
+    #dv:after {
+      content: var(--foo);
+    }
+    #desc {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    使用渐变，一个div实现进度条
+   -->
+  <div id="dv"></div>
+  <p id="desc"></p>
+  <script>
+    var dv = document.getElementById('dv')
+    var percent = window.getComputedStyle(dv, null).backgroundSize
+    document.getElementById('desc').innerHTML = percent
+  </script>
+</body>
+</html>

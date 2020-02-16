@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      overflow: auto;
+      width: 200px;
+      height: 400px;
+      border: 1px solid #ccc;
+    }
+    dl {
+      padding: 24px 0 0 0;
+    }
+    dt {
+      position: sticky;
+      top: 0;
+      padding: 2px 0 0 12px;
+      border-top: 1px solid #717D85;
+      border-bottom: 1px solid #989EA4;
+      background-color: #409EFF;
+      color: #FFF;
+    }
+    dd {
+      margin: 0;
+      padding: 0 0 0 12px;
+      /* white-space: nowrap; */
+    }
+    dd + dd {
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    position:sticky，粘性定位要起作用，需要设置最后滞留位置, 如top: 10px;
+   -->
+  <div>
+    <dl>
+      <dt>A</dt>
+      <dd>a1</dd>
+      <dd>a2</dd>
+      <dd>a3</dd>
+      <dd>a4</dd>
+      <dd>a5</dd>
+    </dl>
+    <dl>
+      <dt>C</dt>
+      <dd>c1</dd>
+      <dd>c2</dd>
+      <dd>c3</dd>
+      <dd>c4</dd>
+      <dd>c5</dd>
+      <dd>c6</dd>
+      <dd>c7</dd>
+      <dd>c8</dd>
+      <dd>c9</dd>
+      <dd>c10</dd>
+    </dl>
+    <dl>
+      <dt>E</dt>
+      <dd>E1</dd>
+      <dd>E2</dd>
+      <dd>E3</dd>
+      <dd>E4</dd>
+      <dd>E5</dd>
+    </dl>
+    <dl>
+      <dt>T</dt>
+      <dd>T1</dd>
+      <dd>T2</dd>
+      <dd>T3</dd>
+      <dd>T4</dd>
+      <dd>T5</dd>
+      <dd>T6</dd>
+      <dd>T7</dd>
+      <dd>T8</dd>
+      <dd>T9</dd>
+      <dd>T10</dd>
+      <dd>T11</dd>
+      <dd>T12</dd>
+      <dd>T13</dd>
+      <dd>T14</dd>
+      <dd>T15</dd>
+      <dd>T16</dd>
+      <dd>T17</dd>
+      <dd>T18</dd>
+      <dd>T19</dd>
+      <dd>T20</dd>
+    </dl>
+  </div>
+</body>
+</html>

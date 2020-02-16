@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+    }
+    .container > div {
+      border: 1px solid #000;
+    }
+    .container {
+      min-height: 100%;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+  </style>
+</head>
+<body>
+  <!--  
+    使用grid布局实现sticky footer
+  -->
+  <div class="container">
+    <div>header</div>
+    <div>main</div>
+    <div>footer</div>
+  </div>
+</body>
+</html>

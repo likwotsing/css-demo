@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .boundary {
+      position: relative;
+      width: 50vw;
+      height: 50vh;
+    }
+    .ball {
+      position: absolute;
+      width: 10vw;
+      height: 10vw;
+      border-radius: 50%;
+      background-color: #409EFF;
+      animation: x 5s linear infinite alternate,
+        y 5.2s linear infinite alternate;
+    }
+    @keyframes x {
+      0% {
+        left: 0%;
+      }
+      100% {
+        left: calc(100% - 10vw);
+      }
+    }
+    @keyframes y {
+      0% {
+        top: 0%;
+      }
+      100% {
+        top: calc(100% - 10vw);
+      }
+    }
+    .ball:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    CSS弹球动画效果的原理
+  -->
+  <div class="ball"></div>
+</body>
+</html>

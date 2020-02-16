@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    div {
+      width: 100px;
+      height: 100px;
+      margin: 50px;
+      background-color: #409EFF;
+      animation: rotate 3s linear infinite;
+      /* 
+      backwards: 目标将应用第一个关键帧
+      forwards: 目标将应用最后一个关键帧
+       */
+      animation-fill-mode: forwards;
+    }
+    @keyframes rotate {
+      100% {
+        transform: rotate(1turn);
+      }
+    }
+    div:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    CSS动画其实是可以暂停的
+   -->
+  <div>111</div>
+</body>
+</html>

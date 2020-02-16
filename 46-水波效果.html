@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      text-align: center;
+      line-height: 50px;
+      animation: water-waves linear infinite;
+    }
+    .wave1, .wave2, .wave3 {
+      position: absolute;
+      top: 50%;
+      left: -35%;
+      width: 200%;
+      height: 200%;
+      background-color: #409EFF;
+      opacity: 0.3;
+      border-radius: 35%;
+      /* 继承动画效果 */
+      animation: inherit;
+      animation-duration: 8s;
+    }
+    .wave1 {
+      left: -80%;
+      opacity: 0.5;
+    }
+    .wave2 {
+      left: -60%;
+      opacity: 0.7;
+    }
+    @keyframes water-waves {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    水波效果原理
+  -->
+  <div class="container">
+    <div class="wave1"></div>
+    <div class="wave2"></div>
+    <div class="wave3"></div>
+    水波效果
+  </div>
+</body>
+</html>

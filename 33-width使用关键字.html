@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    div {
+      display: inline-block;
+      /* 填充整个空间 */
+      /* width: -webkit-fill-available; */
+      /* 实现单列文字 */
+      width: min-content;
+      margin: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 1px solid #409EFF;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    设置宽度为fill-available，可以使inline-block像block那样填充整个空间
+   -->
+  <div>
+    文字内容阿萨德
+  </div>
+</body>
+</html>

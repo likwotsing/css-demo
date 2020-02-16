@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      min-height: calc(100vh);
+      display: grid;
+      grid-template-areas: "header header header" "left main right" "footer footer footer";
+      grid-template-columns: 100px auto 100px;
+      grid-template-rows: 50px auto 50px;
+      grid-gap: 5px;
+      /* justify-content: stretch; */
+      /* justify-content: center; */
+    }
+    .container > div:nth-child(1) {
+      background-color: red;
+    }
+    .container > div:nth-child(2) {
+      background-color: green;
+    }
+    .container > div:nth-child(3) {
+      background-color: blue;
+    }
+    .container > div:nth-child(4) {
+      background-color: yellow;
+    }
+    .container > div:nth-child(5) {
+      background-color: #409EFF;
+    }
+    .container > div:nth-child(1) {
+      /* grid-area: header; */
+      /* grid-column: span 3; */
+      grid-column: 1 / 4;
+    }
+    .container > div:nth-child(5) {
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+  <!--  
+    火狐浏览器grid布局检测器
+  -->
+  <div class="container">
+    <div>1header</div>
+    <div>2left</div>
+    <div>3main</div>
+    <div>4right</div>
+    <div>5footer</div>
+  </div>
+</body>
+</html>

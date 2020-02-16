@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    div {
+      width: 48px;
+      height: 60px;
+      /* player.png是一个精灵图 */
+      background: url(palyer.png) no-repeat;
+      /* 10步，是因为精灵图有10张 */
+      animation: move 2s steps(10) infinite;
+    }
+    @keyframes move {
+      100% {
+        background-position: -480px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--  
+    利用CSS精灵实现逐帧动画
+  -->
+</body>
+</html>

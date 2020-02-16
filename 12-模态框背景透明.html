@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+      opacity: 1;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #409EFF;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    要使模态框背景透明，用rgba是一种简单方式
+   -->
+   <div class="wrap">
+     <div class="box">文字</div>
+   </div>
+</body>
+</html>

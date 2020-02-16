@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+   .container {
+    display: table;
+    width: 100%;
+    border-spacing: 30px 0;
+   }
+   .container > div {
+     display: table-cell;
+     border: 5px solid red;
+     background-color: #409EFF;
+   }
+   .container > div:nth-child(1) {
+     height: 200px;
+   }
+  </style>
+</head>
+<body>
+  <!-- 
+    table单元格之间的距离，margin不起作用，需要在table设置border-spacing
+   -->
+  <div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+</body>
+</html>

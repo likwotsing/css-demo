@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+    }
+    .container>div {
+      width: 20px;
+      height: 20px;
+      border: 1px solid orange;
+      background-color: #409EFF;
+      /* margin: auto; */
+    }
+    .container>div:nth-child(2) {
+      /* margin: auto; */
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    1. 给所有子元素添加margin: auto;
+    2. 只给某个子元素添加margin: auto;
+   -->
+   <div class="container">
+     <div>1</div>
+     <div>2</div>
+     <div>3</div>
+     <div>4</div>
+     <div>5</div>
+   </div>
+</body>
+</html>

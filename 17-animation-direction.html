@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    div {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #409EFF;
+      animation: move 2s linear infinite;
+    }
+    div:nth-child(1) {
+      /* 设置方向 */
+      animation-direction: alternate;
+    }
+    @keyframes move {
+      100% {
+        transform: translate(300%, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    动画方向可以选择alternate，去回交替进行
+
+    border-radius：该属性是一个 简写属性，是为了将这四个属性 border-top-left-radius、border-top-right-radius、border-bottom-right-radius，和 border-bottom-left-radius 简写为一个属性。
+    
+    百分比：水平半轴相对于盒模型的宽度；垂直半轴相对于盒模型的高度。负值无效。
+   -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</body>
+</html>

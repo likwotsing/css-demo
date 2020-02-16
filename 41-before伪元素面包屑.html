@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+    }
+    li::before {
+      content: ' > ';
+      color: red;
+      display: inline-block;
+      width: 60px;
+      text-align: center;
+    }
+    li:first-child::before {
+      content: '';
+      width: 0;
+    }
+  </style>
+</head>
+<body>
+  <!--  
+    使用before伪元素实现面包屑
+  -->
+  <ul>
+    <li>首页</li>
+    <li>活动</li>
+    <li>查看</li>
+  </ul>
+</body>
+</html>

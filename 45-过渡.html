@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    div {
+      width: 100px;
+      height: 100px;
+      background-image: url(./logo.jpg);
+      background-size: contain;
+      border-radius: 50%;
+
+    }
+    div:hover {
+      transform: rotate(1turn);
+      transition: transform 0.8s;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    爱的魔力转圈圈 
+    把transition 放到hover下，鼠标移走不会再转动
+  -->
+  <div></div>
+</body>
+</html>
